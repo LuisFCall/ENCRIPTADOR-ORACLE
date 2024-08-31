@@ -139,20 +139,13 @@ body {
 
 /* Estilos para celulares */
 @media (max-width: 600px) {
-    .logo {
-        width: 20%;
+    header .logo {
+        width: 25%;
     }
 
     main {
         flex-direction: column;
-        margin-left: 0;
-        margin-bottom: 20px;
-    }
-
-    .text__area, .text__area__mensaje {
-        width: 90%;
-        margin: 0 auto;
-        margin-top: 20px;
+        margin: 20px;
     }
 
     .text__area {
@@ -162,22 +155,16 @@ body {
     .text__area__mensaje {
         height: 300px;
         width: 100%;
-        margin: 20px 0;
     }
 
     .botones {
         flex-direction: column;
-        align-items: center;
+        gap: 10px;
     }
 
-    .btn-encriptar, .btn-desencriptar {
+    .btn-encriptar, .btn-desencriptar, .copiar {
         width: 100%;
         margin: 10px 0;
-    }
-
-    .copiar {
-        width: 100%;
-        margin-top: 20px;
     }
 
     .footer {
@@ -188,18 +175,13 @@ body {
 
 /* Estilos para tablets */
 @media (min-width: 601px) and (max-width: 1024px) {
-    .logo {
+    header .logo {
         width: 15%;
     }
 
     main {
         flex-direction: column;
-        margin-left: 0;
-    }
-
-    .text__area, .text__area__mensaje {
-        width: 80%;
-        margin: 0 auto;
+        margin: 20px;
     }
 
     .text__area {
@@ -208,21 +190,21 @@ body {
 
     .text__area__mensaje {
         height: 350px;
+        width: 80%;
     }
 
     .botones {
         flex-direction: row;
         justify-content: center;
+        gap: 10px;
     }
 
     .btn-encriptar, .btn-desencriptar {
         width: 45%;
-        margin: 10px;
     }
 
     .copiar {
         width: 45%;
-        margin: 20px auto;
     }
 
     .footer {
